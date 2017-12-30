@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="./css/PizzaOrders.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
     <div class="jumbotron jumbotron-fluid text-center">
       <div class="container">
-        <h1 class="display-3">Michelangelo's Pizza</h1>
+        <h1 class="display-3 PageTitle">Michelangelo's Pizza</h1>
         <p class="lead">Place your order here before you stop in, that way your pizza will be done faster!</p>
       </div>
     </div>
@@ -39,7 +40,7 @@
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Size" id="inlineRadio4" value="extraLarge"> Extra Large (18") <span class="badge badge-pill badge-success">$16.00</span>
+          <input class="form-check-input" type="radio" name="Size" id="inlineRadio4" value="ExtraLarge"> Extra Large (18") <span class="badge badge-pill badge-success">$16.00</span>
         </label>
       </div>
     </div>
@@ -57,12 +58,12 @@
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio2" value="garlicButter"> Garlic Butter Crust
+          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio2" value="GarlicButter"> Garlic Butter Crust
         </label>
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio3" value="cheeseStuffed"> Cheese Stuffed Crust <span class="badge badge-success">+$3</span>
+          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio3" value="CheeseStuffed"> Cheese Stuffed Crust <span class="badge badge-success">+$3</span>
         </label>
       </div>
       <div class="form-check form-check-inline">
@@ -72,7 +73,7 @@
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio5" value="houseSpecial"> House Special Crust
+          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio5" value="HouseSpecial"> House Special Crust
         </label>
       </div>
     </div>
@@ -105,7 +106,7 @@
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio5" value="noSauce"> No Sauce
+          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio5" value="NoSauce"> No Sauce
         </label>
       </div>
     </div>
@@ -213,20 +214,52 @@
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio2" value="noCheese"> No Cheese
+          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio2" value="NoCheese"> No Cheese
         </label>
       </div>
       <div class="form-check form-check-inline">
         <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio3" value="extraCheese"> Extra Cheese <span class="badge badge-success">+$3</span>
+          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio3" value="ExtraCheese"> Extra Cheese <span class="badge badge-success">+$3</span>
         </label>
       </div>
     </div>
     <!-- /Cheese -->
 
+    <!-- Order Button -->
+    <div class="text-center">
+      <button name="Checkout" class="OrderButton btn-success" type="button" data-toggle="modal" data-target="#RecieptModal" onclick="getTotalStart()">Continue to Checkout</button>
+    </div>
+    <!-- /Order Button -->
+
+    <!-- Reciept Modal -->
+    <div class="modal" id="RecieptModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Your Order:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="ShowOrderItems"></div>
+            <div id="ShowRunningPrice"></div>
+            <div id="TotalPriceStyle"><h3>Total Cost:</h3></div>
+            <div id="TotalPriceValue"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Place Order</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Reciept Modal -->
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./js/PizzaOrder.js"></script>
   </body>
 </html>

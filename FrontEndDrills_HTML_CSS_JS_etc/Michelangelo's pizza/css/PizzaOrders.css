@@ -1,0 +1,12 @@
+.PageTitle {
+  font-weight: 900;
+}
+
+.OrderButton{
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
+  cursor: pointer;
+}
