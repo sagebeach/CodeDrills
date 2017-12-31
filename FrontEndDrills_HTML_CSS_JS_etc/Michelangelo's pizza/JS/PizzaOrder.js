@@ -128,25 +128,59 @@ function getVegetables(runningTotal,OrderItems,RunningPrice) {
   getMeats(runningTotal,OrderItems,RunningPrice);
 }
 
-//Meat choices; same handling as vegetable choices.
+
+//test code rework
 function getMeats(runningTotal,OrderItems,RunningPrice) {
   var meatsCost = 0;
   var meatsChoices = []; //initializes this variable as an array so it can collect the names of multiple selected values.
-  var meatsArray = document.getElementsByName('Meats');
-  for (var n = 0; n < meatsArray.length; n++) {
-    if (meatsArray[n].checked) {
-      meatsChoices.push(meatsArray[n].value);
+  var meatsArray = document.getElementsByName('Carnivore');
+  for (var l = 0; l < meatsArray.length; l++) {
+    if (meatsArray[l].checked) {
+      meatsChoices.push(meatsArray[l].value);
     }
   }
   var meatsCount = meatsChoices.length;
   if (meatsCount >= 2) {
+    meatsCost = (meatsCount + 1);
+  } else {
+    meatsCost = 0;
+  }
+  runningTotal = (runningTotal + meatsCost);
+  for (var l = 0; l < meatsChoices.length; l++) {
+    OrderItems = OrderItems + meatsChoices[l] + "<br>";
+    if (meatsCount <= 1) {
+      RunningPrice = RunningPrice + 0 + "<br>";
+      meatsCount = meatsCount - 1;
+    } else if (meatsCount == 2){
+      RunningPrice = RunningPrice + 1 + "<br>";
+      meatsCount = meatsCount - 1;
+    } else {
+      RunningPrice = RunningPrice + 1 + "<br>";
+      meatsCount = meatsCount - 1;
+    }
+  }
+  getCheese(runningTotal,OrderItems,RunningPrice);
+}
+
+//Meat choices; same handling as vegetable choices.
+/*function getMeats(runningTotal,OrderItems,RunningPrice) {
+  var meatsCost = 0;
+  var meatsChoices = []; //initializes this variable as an array so it can collect the names of multiple selected values.
+  var meatsArray = document.getElementsByName('Carnivore');
+  for (var j = 0; j < meatsArray.length; j++) {
+    if (meatsArray[j].checked) {
+      meatsChoices.push(meatsArray[j].value);
+    }
+  }
+  var meatsCount = meatsChoices.length;
+  if (meatsCount > 1) {
     meatsCost = (meatsCount - 1);
   } else {
     meatsCost = 0;
   }
   runningTotal = (runningTotal + meatsCost);
-  for (var o = 0; o < meatsChoices.length; o++) {
-    OrderItems = OrderItems + meatsChoices[o] + "<br>";
+  for (var j = 0; j < meatsChoices.length; j++) {
+    OrderItems = OrderItems + meatsChoices[j] + "<br>";
     if (meatsCount <= 1) {
       RunningPrice = RunningPrice + 0 + "<br>";
       meatsCount = meatsCount - 1;
@@ -159,7 +193,7 @@ function getMeats(runningTotal,OrderItems,RunningPrice) {
     }
   }
   getCheese(runningTotal,OrderItems,RunningPrice);
-}
+} */
 
 //Cheese options; same handling as crust
 function getCheese(runningTotal,OrderItems,RunningPrice) {
@@ -219,7 +253,7 @@ function getCrust(runningTotal,OrderItems,RunningPrice) {
   }
   runningTotal = (runningTotal + crustCost); //adds any additional cost from the crust onto the runningTotal
   getSauce(runningTotal,OrderItems,RunningPrice); //passes the relevant variables into the next function
-};
+}
 
 //Sauce choices handler
 function getSauce(runningTotal,OrderItems,RunningPrice) { //passes the relevant variables into the next function
@@ -235,7 +269,7 @@ function getSauce(runningTotal,OrderItems,RunningPrice) { //passes the relevant 
   }
   runningTotal = (runningTotal + crustCost);
   getVegetables(runningTotal,OrderItems,RunningPrice);
-};
+}
 
 //Vegetable choices, requires different handling because this user input is provided by check boxes.
 function getVegetables(runningTotal,OrderItems,RunningPrice) {
@@ -244,7 +278,7 @@ function getVegetables(runningTotal,OrderItems,RunningPrice) {
   var vegetablesArray = document.getElementsByName('Vegetables');
   for (var l = 0; l < vegetablesArray.length; l++) {
     if (vegetablesArray[l].checked) {
-      VegetablesChoices.push(vegetablesArray[l].value);
+      vegetablesChoices.push(vegetablesArray[l].value);
     }
   }
   var vegetablesCount = vegetablesChoices.length;
@@ -254,7 +288,7 @@ function getVegetables(runningTotal,OrderItems,RunningPrice) {
     vegetablesCost = 0;
   }
   runningTotal = (runningTotal + vegetablesCost);
-  for (var m = 0; m < vegetablesChoices.length; m++) {
+  for (var j = 0; j< vegetablesChoices.length; m++) {
     OrderItems = OrderItems + vegetablesChoices[m] + "<br>";
     if (vegetablesCount <= 1) {
       RunningPrice = RunningPrice + 0 + "<br>";
@@ -268,19 +302,19 @@ function getVegetables(runningTotal,OrderItems,RunningPrice) {
     }
   }
   getMeats(runningTotal,OrderItems,RunningPrice);
-};
+}
 
 //Meat choices; same handling as vegetable choices.
 function getMeats(runningTotal,OrderItems,RunningPrice) {
   var meatsCost = 0;
   var meatsChoices = []; //initializes this variable as an array so it can collect the names of multiple selected values.
   var meatsArray = document.getElementsByName('Meats');
-  for (var n = 0; n < meatsArray.length; n++) {
-    if (meatsArray[n].checked) {
-      MeatsChoices.push(meatsArray[n].value);
+  for (var j= 0; j < meatsArray.length; j++) {
+    if (meatsArray[j].checked) {
+      MeatsChoices.push(meatsArray[j].value);
     }
   }
-  var Count = meatsChoices.length;
+  var meatsCount = meatsChoices.length;
   if (meatsCount >= 2) {
     meatsCost = (meatsCount - 1);
   } else {
@@ -293,7 +327,7 @@ function getMeats(runningTotal,OrderItems,RunningPrice) {
       RunningPrice = RunningPrice + 0 + "<br>";
       meatsCount = meatsCount - 1;
     } else if (meatsCount == 2){
-      MeatsPrice = MeatsPrice + 1 + "<br>";
+      RunningPrice = RunningPrice + 1 + "<br>";
       meatsCount = meatsCount - 1;
     } else {
       RunningPrice = RunningPrice + 1 + "<br>";
@@ -301,7 +335,7 @@ function getMeats(runningTotal,OrderItems,RunningPrice) {
     }
   }
   getCheese(runningTotal,OrderItems,RunningPrice);
-};
+}
 
 //Cheese options; same handling as crust
 function getCheese(runningTotal,OrderItems,RunningPrice) {
@@ -322,4 +356,4 @@ function getCheese(runningTotal,OrderItems,RunningPrice) {
   document.getElementById("ShowOrderItems").innerHTML=OrderItems;
   document.getElementById("ShowRunningPrice").innerHTML=RunningPrice;
   document.getElementById("TotalPriceValue").innerHTML = "</h3>$"+runningTotal+".00"+"</h3>";
-};
+}
