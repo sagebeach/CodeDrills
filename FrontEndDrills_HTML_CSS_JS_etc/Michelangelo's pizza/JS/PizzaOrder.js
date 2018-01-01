@@ -39,7 +39,7 @@ function getCrust(runningTotal,OrderItems,RunningPrice) {
       crustChoice = crustArray[j].value;
       OrderItems = OrderItems + crustChoice +"<br>";
     }
-    if (crustChoice === "CheeseStuffed") { //Cheese Stuffed crust costs an additional $3.
+    if (crustChoice === "Cheese Stuffed") { //Cheese Stuffed crust costs an additional $3.
       crustCost = 3; //Specifies change in price to the variable crustCost rather than the runningTotal because if later options also have an additional cost then they can be added in easier.
     }
   }
@@ -77,7 +77,7 @@ function getVegetables(runningTotal,OrderItems,RunningPrice) {
   }
   var vegetablesCount = vegetablesChoices.length;
   if (vegetablesCount >= 2) {
-    vegetablesCost = (vegetablesCount + 1);
+    vegetablesCost = (vegetablesCount - 1);
   } else {
     vegetablesCost = 0;
   }
@@ -99,7 +99,7 @@ function getVegetables(runningTotal,OrderItems,RunningPrice) {
 }
 
 
-//test code rework
+//Meat choices; same handling as vegetable choices.
 function getMeats(runningTotal,OrderItems,RunningPrice) {
   var meatsCost = 0;
   var meatsChoices = []; //initializes this variable as an array so it can collect the names of multiple selected values.
@@ -111,7 +111,7 @@ function getMeats(runningTotal,OrderItems,RunningPrice) {
   }
   var meatsCount = meatsChoices.length;
   if (meatsCount >= 2) {
-    meatsCost = (meatsCount + 1);
+    meatsCost = (meatsCount - 1);
   } else {
     meatsCost = 0;
   }
@@ -132,7 +132,7 @@ function getMeats(runningTotal,OrderItems,RunningPrice) {
   getCheese(runningTotal,OrderItems,RunningPrice);
 }
 
-//Meat choices; same handling as vegetable choices.
+//test code rework
 /*function getMeats(runningTotal,OrderItems,RunningPrice) {
   var meatsCost = 0;
   var meatsChoices = []; //initializes this variable as an array so it can collect the names of multiple selected values.
@@ -175,7 +175,7 @@ function getCheese(runningTotal,OrderItems,RunningPrice) {
       cheeseChoice = cheeseArray[p].value;
       OrderItems = OrderItems + cheeseChoice +"<br>";
     }
-    if (cheeseChoice === "CheeseStuffed") { //Extra cheese costs an additional $3.
+    if (cheeseChoice === "Extra Cheese") { //Extra cheese costs an additional $3.
       cheeseCost = 3; //Specifies change in price to the variable cheeseCost rather than the runningTotal because if later options also have an additional cost then they can be added in easier.
     }
   }
