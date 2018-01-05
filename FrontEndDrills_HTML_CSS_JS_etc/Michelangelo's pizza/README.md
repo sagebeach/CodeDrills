@@ -15,16 +15,20 @@ and return the cost as a 'reciept' displayed in window.
 Identified form data and inputs,
 fleshed out frontend page,
 specified prices in preparation for backend processing
+2. Wrote Javascript code to handle the price calculation for the menu selections
+and the output of those computations to a reciept modal.
 
 ## Results
 ---
 1. The main page is formatted correctly and ready for design implementation and form control.
+2. User's menu selections get output to a reciept which displays user selections and their price,
+as well as the total price of the pizza.
 
 ## To Do
 ---
 
-*gather user input on selection choices
-*write script to compute prices from selections
-*write script to total cost of selections
-*implement page design
-*return cost on displayed reciept
+~~*gather user input on selection choices~~
+~~*write script to compute prices from selections~~
+~~*write script to total cost of selections~~
+~~*implement page design~~
+~~*return cost on displayed reciept~~
