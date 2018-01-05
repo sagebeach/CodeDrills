@@ -2,6 +2,49 @@
   font-weight: 900;
 }
 
+.jumbotron {
+    background: url(../images/background.jpg) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.TitleText {
+  border-radius: 10px;
+  background-color: #900;
+  opacity: .7;
+  color: #fff
+}
+
+/*.jumbotron h2{
+  opacity: 1;
+} */
+
+
+body {
+background-image: url(../images/pizza.jpg)
+}
+
+.MenuSelection {
+border: 2px solid #900;
+border-radius: 10px;
+background-color: #900;
+color: #fff;
+padding-bottom: 15px;
+margin-bottom: 30px;
+}
+
+.PizzaOption {
+border: 2px solid grey;
+border-radius: 20px;
+background-color: white;
+color: #000;
+}
+
 .OrderButton{
   border: none;
   padding: 10px 16px;
@@ -9,4 +52,11 @@
   font-size: 18px;
   margin: 20px;
   cursor: pointer;
+}
+/*reciept modal */
+#modal-title {
+  border-bottom: 5px solid #900;
+}
+#Total {
+  display: inline;
 }

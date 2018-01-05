@@ -39,7 +39,7 @@ function getCrust(runningTotal,OrderItems,RunningPrice) {
       crustChoice = crustArray[j].value;
       OrderItems = OrderItems + crustChoice +"<br>";
     }
-    if (crustChoice === "Cheese Stuffed") { //Cheese Stuffed crust costs an additional $3.
+    if (crustChoice === "Cheese Stuffed Crust") { //Cheese Stuffed crust costs an additional $3.
       crustCost = 3; //Specifies change in price to the variable crustCost rather than the runningTotal because if later options also have an additional cost then they can be added in easier.
     }
   }

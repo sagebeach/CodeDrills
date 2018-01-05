@@ -10,217 +10,217 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid text-center">
-      <div class="container">
-        <h1 class="display-3 PageTitle">Michelangelo's Pizza</h1>
+    <div class="jumbotron text-center">
+      <div class="container TitleText">
+        <h2 class="display-4 PageTitle">Michelangelo's Pizza</h2>
         <p class="lead">Place your order here before you stop in, that way your pizza will be done faster!</p>
       </div>
     </div>
 
     <!-- Size of pizza? Radios; personal, medium, large, extra large -->
-    <div class="container text-center">
+    <div class="container text-center MenuSelection">
       <legend>Size of Pizza:</legend>
       <label>How much pizza can you eat?</label>
-    </div>
-    <div class="container text-center">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Size" id="inlineRadio1" value="Personal"> Personal (6") <span class="badge badge-pill badge-success">$6.00</span>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Size" id="inlineRadio2" value="Medium" checked> Medium (12") <span class="badge badge-pill badge-success">$10.00</span>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Size" id="inlineRadio3" value="Large"> Large (16") <span class="badge badge-pill badge-success">$14.00</span>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Size" id="inlineRadio4" value="Extra Large"> Extra Large (18") <span class="badge badge-pill badge-success">$16.00</span>
-        </label>
+      <div class="container text-center PizzaOption">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Size" id="inlineRadio1" value="Personal"> Personal (6") <span class="badge badge-pill badge-success">$6.00</span>
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Size" id="inlineRadio2" value="Medium" checked> Medium (12") <span class="badge badge-pill badge-success">$10.00</span>
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Size" id="inlineRadio3" value="Large"> Large (16") <span class="badge badge-pill badge-success">$14.00</span>
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Size" id="inlineRadio4" value="Extra Large"> Extra Large (18") <span class="badge badge-pill badge-success">$16.00</span>
+          </label>
+        </div>
       </div>
     </div>
     <!-- /Size of pizza? -->
 
     <!--  Crust? Radio: Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust, Spicy Crust, and House Special Crust-->
-    <div class="container text-center">
+    <div class="container text-center MenuSelection">
       <legend>Crust:</legend>
-    </div>
-    <div class="container text-center">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio1" value="Plain" checked> Plain Crust
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio2" value="Garlic Butter"> Garlic Butter Crust
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio3" value="Cheese Stuffed"> Cheese Stuffed Crust <span class="badge badge-success">+$3</span>
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio4" value="Spicy"> Spicy Crust
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Crust" id="inlineRadio5" value="House Special"> House Special Crust
-        </label>
+      <div class="container text-center PizzaOption">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Crust" id="inlineRadio1" value="Plain Crust" checked> Plain Crust
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Crust" id="inlineRadio2" value="Garlic Butter Crust"> Garlic Butter Crust
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Crust" id="inlineRadio3" value="Cheese Stuffed Crust"> Cheese Stuffed Crust <span class="badge badge-success">+$3</span>
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Crust" id="inlineRadio4" value="Spicy Crust"> Spicy Crust
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Crust" id="inlineRadio5" value="House Special Crust"> House Special Crust
+          </label>
+        </div>
       </div>
     </div>
     <!-- /Crust -->
 
     <!-- Sauce? Radio: Marinara sauce, White sauce, Barbeque Sauce, Pesto Sauce and No Sauce -->
-    <div class="container text-center">
+    <div class="container text-center MenuSelection">
       <legend>Sauce:</legend>
-    </div>
-    <div class="container text-center">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio1" value="Marinara" checked> Marinara Sauce
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio2" value="White"> White Sauce
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio3" value="Barbecue"> Barbecue Sauce
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio4" value="Pesto"> Pesto Sauce
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio5" value="No Sauce"> No Sauce
-        </label>
+      <div class="container text-center PizzaOption">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio1" value="Marinara" checked> Marinara Sauce
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio2" value="White"> White Sauce
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio3" value="Barbecue"> Barbecue Sauce
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio4" value="Pesto"> Pesto Sauce
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Sauce" id="inlineRadio5" value="No Sauce"> No Sauce
+          </label>
+        </div>
       </div>
     </div>
     <!-- /Sauce -->
 
     <!-- Vegetables? Check Boxes: Tomatoes, Onions, Olives, Green Peppers, Mushrooms, Pineapple, Spinach, and Jalapeno -->
-    <div class="container text-center">
+    <div class="container text-center MenuSelection">
       <legend>Vegetables:</legend>
       <label>First topping <span class="badge badge-success">free!</span></label>
       <label>Each additional topping <span class="badge badge-success">+$1</span></label>
-    </div>
-    <div class="container text-center">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox1" name="Vegetables" value="Tomatoes" checked> Tomatoes
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox2" name="Vegetables" value="Onions"> Onions
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox3" name="Vegetables" value="Olives"> Olives
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox4" name="Vegetables" value="Green Peppers"> Green Peppers
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox5" name="Vegetables" value="Mushrooms"> Mushrooms
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox6" name="Vegetables" value="Pineapple"> Pineapple
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox7" name="Vegetables" value="Spinach"> Spinach
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="veggieCheckbox8" name="Vegetables" value="Jalapeno"> Jalapeno
-        </label>
+      <div class="container text-center PizzaOption">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox1" name="Vegetables" value="Tomatoes" checked> Tomatoes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox2" name="Vegetables" value="Onions"> Onions
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox3" name="Vegetables" value="Olives"> Olives
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox4" name="Vegetables" value="Green Peppers"> Green Peppers
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox5" name="Vegetables" value="Mushrooms"> Mushrooms
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox6" name="Vegetables" value="Pineapple"> Pineapple
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox7" name="Vegetables" value="Spinach"> Spinach
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="veggieCheckbox8" name="Vegetables" value="Jalapeno"> Jalapeno
+          </label>
+        </div>
       </div>
     </div>
     <!-- /Vegetables -->
 
     <!--Meats? Check Boxes: Pepperoni, Sausage, Canadian Bacon, Groun Beef, Anchovy, and Chicken -->
-    <div class="container text-center">
+    <div class="container text-center MenuSelection">
       <legend>Meats:</legend>
       <label>First topping <span class="badge badge-success">free!</span></label>
       <label>Each additional topping <span class="badge badge-success">+$1</span></label>
-    </div>
-    <div class="container text-center">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="meatCheckbox" name="Carnivore" value="Pepperoni" checked> Pepperoni
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="meatCheckbox2" name="Carnivore" value="Sausage"> Sausage
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="meatCheckbox3" name="Carnivore" value="Canadian Bacon"> Canadian Bacon
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="meatCheckbox4" name="Carnivore" value="Ground Beef"> Ground Beef
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="meatCheckbox5" name="Carnivore" value="Anchovy"> Anchovy
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" id="meatCheckbox6" name="Carnivore" value="Chicken"> Chicken
-        </label>
+      <div class="container text-center PizzaOption">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="meatCheckbox" name="Carnivore" value="Pepperoni" checked> Pepperoni
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="meatCheckbox2" name="Carnivore" value="Sausage"> Sausage
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="meatCheckbox3" name="Carnivore" value="Canadian Bacon"> Canadian Bacon
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="meatCheckbox4" name="Carnivore" value="Ground Beef"> Ground Beef
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="meatCheckbox5" name="Carnivore" value="Anchovy"> Anchovy
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="meatCheckbox6" name="Carnivore" value="Chicken"> Chicken
+          </label>
+        </div>
       </div>
     </div>
     <!--/Meats -->
 
     <!-- Cheese? Radio: Regular, No Cheese, Extra Cheese -->
-    <div class="container text-center">
+    <div class="container text-center MenuSelection">
       <legend>Cheese:</legend>
-    </div>
-    <div class="container text-center">
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio1" value="Regular" checked> Regular
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio2" value="No Cheese"> No Cheese
-        </label>
-      </div>
-      <div class="form-check form-check-inline">
-        <label class="form-check-label">
-          <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio3" value="Extra Cheese"> Extra Cheese <span class="badge badge-success">+$3</span>
-        </label>
+      <div class="container text-center PizzaOption">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio1" value="Regular Cheese" checked> Regular
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio2" value="No Cheese"> No Cheese
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Cheese" id="inlineRadio3" value="Extra Cheese"> Extra Cheese <span class="badge badge-success">+$3</span>
+          </label>
+        </div>
       </div>
     </div>
     <!-- /Cheese -->
@@ -235,17 +235,23 @@
     <div class="modal" id="RecieptModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" id="modal-title">
             <h5 class="modal-title">Your Order:</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div id="ShowOrderItems"></div>
-            <div id="ShowRunningPrice"></div>
-            <div id="TotalPriceStyle"><h3>Total Cost:</h3></div>
-            <div id="TotalPriceValue"></div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-8 col-sm-6" id="ShowOrderItems"></div>
+                <div class="col-4 col-sm-6" id="ShowRunningPrice"></div>
+              </div>
+              <div class="row" id="Total">
+                <div id="TotalPriceStyle"><h3><em>Total Cost:</em></h3></div>
+                <div id="TotalPriceValue"></div>
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Place Order</button>
