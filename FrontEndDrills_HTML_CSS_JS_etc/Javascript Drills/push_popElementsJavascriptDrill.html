@@ -13,11 +13,15 @@
     <button onclick="pop_element()">POP Elements</button>
     <button onclick="push_element()">PUSH Elements</button>
 
+    <input id="user_input"/> <!-- my code -->
+    <button onclick="push_input()">PUSH Your Input</button>
+
     <p id="demo"></p>
 
-    <script>
+    <script type="text/javascript">
         var fruits = ["Red", "Yellow", "Green", "Blue"];
         document.getElementById("demo").innerHTML = fruits;
+        var user_input = document.getElementById("user_input");
 
         function pop_element() {
             fruits.pop();
@@ -25,6 +29,10 @@
         }
         function push_element() {
             fruits.push("Black", "White", "Orange");
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function push_input() { //my code
+            fruits.push(document.getElementById("user_input").value);
             document.getElementById("demo").innerHTML = fruits;
         }
     </script>
