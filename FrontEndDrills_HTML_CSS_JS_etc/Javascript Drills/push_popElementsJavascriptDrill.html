@@ -1,0 +1,33 @@
+﻿<!-- This is a program to practice push and pop elements in an array. The original code was written by marathi kautukachi as part of his javascript programs android app. I added functionality to submit new elements using a text box to submit user input elements.-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>  </title>
+</head>
+<body>
+    <p>Click the button to remove the last element from the array.</p>
+
+    <button onclick="pop_element()">POP Elements</button>
+    <button onclick="push_element()">PUSH Elements</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var fruits = ["Red", "Yellow", "Green", "Blue"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function pop_element() {
+            fruits.pop();
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        function push_element() {
+            fruits.push("Black", "White", "Orange");
+            document.getElementById("demo").innerHTML = fruits;
+        }
+    </script>
+
+</body>
+</html>
