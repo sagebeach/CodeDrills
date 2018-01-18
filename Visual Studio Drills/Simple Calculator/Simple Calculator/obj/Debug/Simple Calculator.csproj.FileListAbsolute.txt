@@ -1,0 +1,37 @@
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\ApplicationInsights.config
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Simple Calculator.dll.config
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Simple Calculator.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Simple Calculator.pdb
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Antlr3.Runtime.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.Web.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Newtonsoft.Json.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\System.Web.Optimization.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\WebGrease.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\System.Web.Optimization.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Antlr3.Runtime.pdb
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Newtonsoft.Json.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\bin\Microsoft.AI.Web.xml
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\obj\Debug\Simple Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\obj\Debug\Simple Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\obj\Debug\Simple Calculator.dll
+C:\Users\Tropical Beach\Documents\VS-Source\repos\Simple Calculator\Simple Calculator\obj\Debug\Simple Calculator.pdb
