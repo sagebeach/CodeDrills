@@ -1,0 +1,57 @@
+<!-- This is a program to practice push and pop elements in an array. The original code was written by marathi kautukachi as part of his javascript programs android app. I added functionality to submit new elements using a text box to submit user input elements.-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>  </title>
+</head>
+<body>
+<button type="button" name="Iterate" onclick="factorialIterative">Iterative function</button>
+<button type="button" name="Recursive" onclick="factorialRecursive">Recursive function</button>
+<br />
+<p id="Iterate">Iterative result:</p>
+<p id="Recursive">Recursive result:</p>
+<script type="text/javascript">
+    var factorialIterative = function(n) {
+        var result = 1;
+        for (var i = 1; i <= n; i++) {
+          result = result*(i);
+        }
+      return result;
+    };
+
+    println("The value of 5! should be " + 5*4*3*2*1);
+    println("The value of 5! is " + factorialIterative(5));
+    println("The value of 0! should be 1");
+    println("The value of 0! is " + factorialIterative(0));
+
+    Program.assertEqual(factorialIterative(5), 120);
+    Program.assertEqual(factorialIterative(0), 1);
+    Program.assertEqual(factorialIterative(6), 720);
+    Program.assertEqual(factorialIterative(10), 3628800);
+    document.getElementById("Iterative").innerHTML = result;
+
+
+      var factorial = function(n) {
+      	// base case:
+      	if (n === 0) {
+      	   return 1;
+    	}
+
+    	// recursive case:
+        return factorial(n-1)*n;
+    };
+
+    println("The value of 0! is " + factorial(0) + ".");
+    println("The value of 5! is " + factorial(5) + ".");
+
+    Program.assertEqual(factorial(0), 1);
+    Program.assertEqual(factorial(5), 120);
+    Program.assertEqual(factorial(6), 720);
+    Program.assertEqual(factorial(10), 3628800);
+</script>
+
+</body>
+</html>
