@@ -9,9 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Image ID="imageReel1" runat="server" Height="150px" Width="150px" />
-            <asp:Image ID="imageReel2" runat="server" Height="150px" Width="150px" />
-            <asp:Image ID="imageReel3" runat="server" Height="150px" Width="150px" />
+            <asp:Image ID="imageReel1" runat="server" Height="150px" Width="150px" ImageUrl="~/Images/Strawberry.png" />
+            <asp:Image ID="imageReel2" runat="server" Height="150px" Width="150px" ImageUrl="~/Images/Diamond.png" />
+            <asp:Image ID="imageReel3" runat="server" Height="150px" Width="150px" ImageUrl="~/Images/Clover.png" />
             <br />
             <br />
             Your Bet: <asp:TextBox ID="userBetTextBox" runat="server"></asp:TextBox>
