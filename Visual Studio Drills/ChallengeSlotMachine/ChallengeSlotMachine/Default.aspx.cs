@@ -9,17 +9,29 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!Page.IsPostBack)
+        {
+            //display the reel values
+            string[] imageReel = new string[] { randomizeImageResults(), randomizeImageResults(), randomizeImageResults() };
+            setRandomizedImages(imageReel);
+            ViewState.Add("PlayersMoney", 100);
+            displayPlayersMoney();
+        }
+    }
 
+    private void displayPlayersMoney()
+    {
+        moneyLabel.Text = String.Format("Player's MoneyL {0:C}", ViewState["PlayersMoney"]);
     }
 
     //apply random image to the reels on button click/
-        //randomize one wheel
-        //randomize all wheels
+    //randomize one wheel
+    //randomize all wheels
     //evaluate image result for the value result
-        //value of cherries, bar, and jackpot
+    //value of cherries, bar, and jackpot
     // apply value result to money total
-        //caluclate win/loss
-        //make sure results persist to viewstate
+    //caluclate win/loss
+    //make sure results persist to viewstate
 
 
     protected void leverButton_Click(object sender, EventArgs e)
@@ -27,10 +39,29 @@ public partial class _Default : System.Web.UI.Page
         int bet = 0;
         if (!int.TryParse(userBetTextBox.Text, out bet)) return;
 
-        int winnings = pullEvent(bet);   
+        int winnings = pullEvent(bet);
+        displayResult(bet, winnings);
+        adjustPlayersMoney(bet, winnings);
+        displayPlayersMoney();
     }
 
-        private int pullEvent(int bet)
+    private void adjustPlayersMoney(int bet, int winnings)
+    {
+        int playersMoney = int.Parse(ViewState["PlayersMoney"].ToString());
+        playersMoney -= bet;
+        playersMoney += winnings;
+        ViewState["PlayersMoney"] = playersMoney;
+    }
+
+    private void displayResult(int bet, int winnings)
+    {
+        if (winnings > 0)
+            resultLabel.Text = String.Format("You bet {0:C} and won {1:C}!", bet, winnings);
+        else
+            resultLabel.Text = String.Format("Sorry, you lost {0:C}. Better luck next time", bet);
+    }
+
+    private int pullEvent(int bet)
         {
             //string slotImage = randomizeImageResults();
             string[] imageReel = new string[] { randomizeImageResults(), randomizeImageResults(), randomizeImageResults() };
