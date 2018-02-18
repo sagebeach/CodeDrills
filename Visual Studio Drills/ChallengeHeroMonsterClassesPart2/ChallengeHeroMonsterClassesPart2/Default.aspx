@@ -14,6 +14,9 @@
             <br />
             <asp:Label ID="resultLabel" runat="server"></asp:Label>
         </div>
+        <p>
+            <asp:Button ID="battleButton" runat="server" OnClick="battleButton_Click" Text="BATTLE!" />
+        </p>
     </form>
 </body>
 </html>
