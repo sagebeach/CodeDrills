@@ -18,7 +18,8 @@ namespace ChallengeWarCardGame
 
         protected void warButton_Click(object sender, EventArgs e)
         {
-            
-            }
+            Game game = new Game("player1", "player2");
+            resultLabel.Text = game.Play();
+        }
     }
 }
