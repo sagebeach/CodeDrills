@@ -1,0 +1,7 @@
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\obj\Debug\Inheritance06.csprojResolveAssemblyReference.cache
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\obj\Debug\Inheritance06.csproj.CoreCompileInputs.cache
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\bin\Debug\Inheritance06.exe.config
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\bin\Debug\Inheritance06.exe
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\bin\Debug\Inheritance06.pdb
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\obj\Debug\Inheritance06.exe
+C:\Users\tropi\Documents\VS-Source\repos\CS02_Inheritance\Inheritance06\Inheritance06\obj\Debug\Inheritance06.pdb
